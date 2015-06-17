@@ -1,0 +1,33 @@
+My YouTube request:
+https://developers.google.com/youtube/v3/getting-started
+
+Some YouTube resource types I may want to access:
+
+- video
+- thumbnail
+- search results
+
+** The response to each request is the JSON representation of a YouTube resource **
+
+My API Key:
+
+AIzaSyABTE4fBQBAXSrX18w3QPt4zhNBZPrWuyY
+
+URL:
+
+The base URL for the host that processes Data API requests = https://www.googleapis.com/youtube/v3
+
+
+ https://www.googleapis.com/youtube/v3/videos
+
+ ?id=7lCDEYXw3mM&key=YOUR_API_KEY
+
+
+Info I want:
+
+
+&fields=items(id,snippet(title,thumbnail))&part=snippet
+
+User's search term:
+
+q: put the search term here in the form of a string
