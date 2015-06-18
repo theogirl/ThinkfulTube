@@ -70,16 +70,16 @@ html {
 }
 
 body {
-	font-family: 'Slabo 27px', serif;
-	background-color: white;
+	font-family: 'Roboto', sans-serif;
+	background-color: darkgrey;
 	font-size: 1.2em;
 	line-height: 1.5;
-	letter-spacing: 1px;
 }
 
 h1 {
 	font-size: 2em;
 	margin: 5px 0 20px 0;
+	/*font-family: 'Slabo 27px', serif;*/
 }
 
 h2 {
@@ -89,13 +89,15 @@ h2 {
 
 .wrapper {
 	background-color: gainsboro;
+	background-image: url(../images/brickwall.png);
+	background-repeat: repeat;
 	margin: 0;
 }
 
 .main {
 	width: 750px;
 	margin: 0 auto;
-	padding: 50px 35px;
+	padding: 30px 35px;
 	background-color: whitesmoke;
 	text-align: center;
 }
@@ -103,10 +105,11 @@ h2 {
 #query {
 	height: 60px;
 	width: 400px;
-	font-size: 1em;
+	font-size: 1.2em;
 	color: grey;
 	padding: 10px;
 	margin: 25px 0;
+
 }
 
 #submit-btn {
@@ -128,8 +131,11 @@ h2 {
 	border: 5px solid gainsboro;
 	padding: 20px;
 	margin:30px auto;
-	width: 500px;
+	width: 525px;
 	font-size: 1.2em;
+}
+.search-results a {
+	color: black;
 }
 
 .video-link {
@@ -139,27 +145,36 @@ h2 {
 
 .video-list-item {
 	width: 100%;
+	background-color: white;
 	border: 1px solid black;
 	padding: 10px;
-	background-color: pink;
 	font-size: 0.7em;
 	height: 110px;
 	margin-bottom: 15px;
 	font-family: sans-serif;
 	letter-spacing: 0;
+	line-height: 1.2;
+}
 
+
+.video-list-item:hover {
+	background-color: lightpink;
 }
 
 .video-img {
-	padding-right: 20px;
 	float: left;
+	width: 25%;
 }
 
 .video-description {
 	float: left;
 	text-align: left;
+	width: 70%;
+	margin-left: 20px;
 }
 
-
+.fp {
+	font-size: 0.7em;
+}
 
 
