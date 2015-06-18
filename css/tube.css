@@ -102,7 +102,7 @@ h2 {
 
 #query {
 	height: 60px;
-	width: 500px;
+	width: 400px;
 	font-size: 1em;
 	color: grey;
 	padding: 10px;
@@ -128,6 +128,38 @@ h2 {
 	border: 5px solid gainsboro;
 	padding: 20px;
 	margin:30px auto;
-	width: 650px;
+	width: 500px;
 	font-size: 1.2em;
 }
+
+.video-link {
+	text-decoration: none;
+
+}
+
+.video-list-item {
+	width: 100%;
+	border: 1px solid black;
+	padding: 10px;
+	background-color: pink;
+	font-size: 0.7em;
+	height: 110px;
+	margin-bottom: 15px;
+	font-family: sans-serif;
+	letter-spacing: 0;
+
+}
+
+.video-img {
+	padding-right: 20px;
+	float: left;
+}
+
+.video-description {
+	float: left;
+	text-align: left;
+}
+
+
+
+

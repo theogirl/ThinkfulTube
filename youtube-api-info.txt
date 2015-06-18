@@ -13,21 +13,30 @@ My API Key:
 
 AIzaSyABTE4fBQBAXSrX18w3QPt4zhNBZPrWuyY
 
-URL:
 
 The base URL for the host that processes Data API requests = https://www.googleapis.com/youtube/v3
 
 
- https://www.googleapis.com/youtube/v3/videos
-
- ?id=7lCDEYXw3mM&key=YOUR_API_KEY
-
-
-Info I want:
-
-
-&fields=items(id,snippet(title,thumbnail))&part=snippet
 
 User's search term:
 
 q: put the search term here in the form of a string
+
+NOTE: When you submit an unauthenticated request, you need to include the key argument that specifies the unique API key for your application
+
+
+Sample that works:
+
+GET https://www.googleapis.com/youtube/v3/search?
+	order=rating
+	&part=snippet
+	&q=cats+and+dogs
+	&relevanceLanguage=en
+	&fields=items%2Fsnippet(title%2C+description)
+	&type=video
+	&maxResults=5
+	&key={YOUR_API_KEY}
+
+
+player.embedHTML : An <iframe> tag that embeds a player that will play the video.
+
